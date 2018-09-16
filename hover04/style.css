@@ -1,0 +1,73 @@
+body{
+    height: 100vh;
+}
+img{
+ width: 100%;  
+ transition: all 0.5s ease;
+ 
+}
+.img01{
+    overflow: hidden;
+    position: relative;
+    top: 0;
+}
+.overlay{
+  width:100%;
+  height:100%;
+    background:rgba(255, 231, 179);
+    position: absolute;
+      bottom: 0;
+       left:0;
+       opacity: 0;
+       transition: all 0.5s ease;
+       transform: scale(0)
+      
+      
+}
+
+
+.button{
+    position: absolute;
+    bottom:20%;
+    left:30%;
+    background-color: black;
+    color: beige;
+    padding:12;
+   width: 100px;
+    transition: all 0.5s linear;
+    
+}
+.button p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10;
+    font-weight: bold;
+}
+.text p{
+
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+   
+}
+.text p:first-child{
+
+top:25%;
+    left:25%;
+ font-size: 16;
+
+}
+.text p:last-child{
+    transition: all 0.5s linear;
+    top:40%;
+    text-align: center;
+   }
+
+.img01:hover .overlay{
+    transform: scale(1);
+    opacity: 1;
+
+}
+.img01:hover img{
+    transform: scale(4)
+}
+       

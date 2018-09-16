@@ -1,0 +1,49 @@
+body{
+    height: 100vh;
+}
+img{
+ width: 100%;  
+ 
+ 
+}
+.img01{
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    perspective: 600px;
+}
+.overlay{
+    width: 95%;
+    height: 94%;
+    background: rgba(255, 255, 255, 0.925);
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    opacity: 0;
+    transition: all 0.5s linear;
+    transform: rotateY(100deg);
+     
+}
+
+   
+
+.img01:hover .overlay{ 
+    opacity:1;
+    transform: rotateY(0deg);
+   
+} 
+
+
+.text p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+}
+.text p:first-child{
+    font-size: 46;
+}
+.text p:last-child{
+    padding:20;
+    font-size: 20;
+    color: gray;
+}
